@@ -5,6 +5,11 @@ Changelog
 .. note::
     Looking for the Fabric 1.x changelog? See :doc:`/changelog-v1`.
 
+- :feature:`1849` Add `Connection.from_v1
+  <fabric.connection.Connection.from_v1>` for easy creation of a modern
+  ``Connection`` object from the currently configured Fabric 1.x
+  environment. Should make upgrading piecemeal much easier for many use
+  cases.
 - :bug:`1850` Skip over ``ProxyJump`` configuration directives in SSH config
   data when they would cause self-referential ``RecursionError``s (e.g. due to
   wildcard-using ``Host`` stanzas which include the jump server itself).
